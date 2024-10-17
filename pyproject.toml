@@ -1,0 +1,15 @@
+[project]
+name = "repl-nix-wordwatchvideos"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "email-validator>=2.2.0",
+    "flask>=3.0.3",
+    "flask-sqlalchemy>=3.1.1",
+    "psycopg2-binary>=2.9.9",
+    "google-api-python-client>=2.148.0",
+    "youtube-transcript-api>=0.6.2",
+    "nltk>=3.9.1",
+    "flask-limiter>=3.8.0",
+]

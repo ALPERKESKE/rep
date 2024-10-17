@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pronounce Check Beta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="page-container">
+        <div class="left-banner">
+            <!-- Placeholder for left banner ad -->
+            <p>Left Banner Ad</p>
+        </div>
+        <div class="main-content">
+            <h1>My Pronounce Check Beta</h1>
+            <div id="error-container" class="error-message"></div>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter a word or phrase" required>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="de">German</option>
+                </select>
+                <button type="submit">Search</button>
+                <span id="loading-indicator" style="display: none;">Searching...</span>
+            </form>
+            <div id="video-player-container" style="display: none;">
+                <div class="video-player-wrapper">
+                    <div id="video-player"></div>
+                </div>
+                <div id="player-controls">
+                    <span id="video-seen-info"></span>
+                    <button id="previous-button">Previous Video</button>
+                    <button id="replay-button">Replay Video</button>
+                    <button id="next-button">Next Video</button>
+                    <button id="new-videos-button">New Videos</button>
+                </div>
+                <div id="subtitle-display"></div>
+            </div>
+        </div>
+        <div class="right-banner">
+            <!-- Placeholder for right banner ad -->
+            <p>Right Banner Ad</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
